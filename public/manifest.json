@@ -1,0 +1,17 @@
+{
+  "name": "SBPG - Sociedade Brasileira de Psicanálise de Goiânia",
+  "short_name": "SBPG",
+  "description": "Transformando vidas através da psicanálise com profissionais dedicados e experientes em Goiânia",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#111827",
+  "icons": [
+    {
+      "src": "/spg1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

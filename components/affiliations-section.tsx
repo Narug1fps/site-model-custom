@@ -12,7 +12,7 @@ export function AffiliationsSection() {
           reconhecidas em todo o mundo
         </p>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center justify-items-center">
+        <div className="grid md:grid-cols-3 gap-12 items-center justify-items-center">
           {/* FEBRAPSI */}
             
             <div className="flex flex-col items-center gap-4 group cursor-pointer">
@@ -66,6 +66,33 @@ export function AffiliationsSection() {
               <h3 className="font-semibold text-lg text-foreground mb-1">IPA</h3>
               <p className="text-sm text-foreground/60">
                 International Psychoanalytical Association
+              </p>
+            </div>
+          </div>
+
+          {/* FEPAL */}
+          <div className="flex flex-col items-center gap-4 group cursor-pointer">
+            <a href="https://fepal.org" target="_blank" rel="noopener noreferrer">
+              <div className="w-48 h-48 flex items-center justify-center p-4 bg-white rounded-lg shadow-md border border-border hover:shadow-xl transition transform group-hover:scale-105">
+                <img
+                  src="/fepal.jpg"
+                  alt="FEPAL - Federação Psicanalítica da América Latina"
+                  className="max-w-full max-h-full object-contain"
+                  onError={(e) => {
+                    const img = e.target as HTMLImageElement
+                    img.style.display = 'none'
+                    img.nextElementSibling?.setAttribute('style', 'display:block')
+                  }}
+                />
+                <div style={{ display: 'none' }} className="text-center text-primary font-bold text-2xl">
+                  FEPAL
+                </div>
+              </div>
+            </a>
+            <div className="text-center">
+              <h3 className="font-semibold text-lg text-foreground mb-1">FEPAL</h3>
+              <p className="text-sm text-foreground/60">
+                Federação Psicanalítica da América Latina
               </p>
             </div>
           </div>
